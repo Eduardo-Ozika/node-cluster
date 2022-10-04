@@ -1,0 +1,17 @@
+{
+  "name": "cluster",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "loadtest": "autocannon -c 800 -d 30 -w 8 --renderStatusCodes -W [ -c 4 -d 5] http://localhost:8000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autocannon": "^7.10.0"
+  }
+}
